@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="../static/css/bootstrap-grid.css" th:href="@{/css/bootstrap-grid.css}"/>
     <link rel="stylesheet" href="../static/css/bootstrap-reboot.css" th:href="@{/css/bootstrap-reboot.css}"/>
     <script src="../static/js/bootstrap.js" th:src="@{/js/bootstrap.js}"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" th:href="@{https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css}"/>
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    th:href="@{https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css}"/>-->
     <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}"/>
 
 </head>
@@ -32,9 +33,9 @@
 
                         <a href="#helpText2" data-toggle="collapse"><span class="glyphicon glyphicon-info-sign"></span></a>
                     </label>
-                    <select class="form-control" id="nazivOrganizacioneJedinice">
+                    <select class="form-control input-lg" id="nazivOrganizacioneJedinice">
                         <option value="sve" selected="selected"></option>
-                        <option value="fakultetALU">Akademija likovnih umjetnosti</option>
+                        <option value="fakultetALU">Akademija likovnih umjetnosti </option>
                         <option value="fakultetASU">Akademija scenskih umjetnosti</option>
                         <option value="fakultetAF">Arhitektonski fakultet</option>
                         <option value="fakultetCIS">Centar za interdisciplinarne studije</option>
@@ -454,7 +455,7 @@
 
 </script>
 
-<style>
+<style th:inline="text">
     .icon {
         height: 10px;
     }
@@ -466,7 +467,7 @@
         margin-bottom: 20px;
         box-shadow: 10px 10px 5px #ccc;
         max-width: 800px;
-        background: url("../../../../../../Desktop/upisniList/images/red_2.png") repeat-y center center fixed;
+        background: url([[@{/images/red_2.png}]]) repeat-y center center fixed;
         background-size: inherit;
         border: solid 15px rgb(255, 255, 255);
     }
@@ -479,6 +480,6 @@
     }
 
 </style>
-
+<script src="../static/js/prijavniList.js" th:src="@{/js/prijavniList.js}"></script>
 </body>
 </html>
