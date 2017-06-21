@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Statistički list</title>
+    <link rel="stylesheet" href="../static/css/bootstrap.css" th:href="@{/css/bootstrap.css}"/>
+    <link rel="stylesheet" href="../static/css/bootstrap-grid.css" th:href="@{/css/bootstrap-grid.css}"/>
+    <link rel="stylesheet" href="../static/css/bootstrap-reboot.css" th:href="@{/css/bootstrap-reboot.css}"/>
+
+</head>
+<body>
+<div class="container">
+<form>
+    <h3 class="text-center">STATISTIČKI LIST</h3>
+    <b class="text-capitalize">PODACI O VISOKOŠKOLSKOJ USTANOVI</b>
+
+    <div class="form-group">
+        <label>Datum diplomiranja/završetka studija</label>
+        <div class="row">
+            <div class="col-3">
+                <input type="text" class="form-control" placeholder="dan" id="datumDiplomiranjaDan">
+            </div>
+            <div class="col-3">
+                <input type="text" class="form-control" placeholder="mjesec" id="datumDiplomiranjaMjesec">
+            </div>
+            <div class="col-3">
+                <input type="text" class="form-control" placeholder="godina" id="datumDiplomiranjaGodina">
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="nazivOrganizacioneJedinice">Naziv organizacione jedinice</label>
+        <select class="form-control" id="nazivOrganizacioneJedinice">
+            <!-- dropdown organizacionih jedinica-->
+            <option></option>
+        </select>
+        <small id="helpText2" class="form-text text-muted">Prema odredbama člana 13. Okvirnog zakona o visokom obrazovanju (Sl. GLasnik BIH, br.59/07)
+            Univerzitet može imati organizacione jedinice, kao što su: fakulteti, akademije, visoke škole ili naučni instituti.
+        </small>
+    </div>
+
+    <div class="form-group">
+        <label for="odsjekISmjer" >Odsjek/smjer</label>
+        <input type="text" class="form-control" id="odsjekISmjer" >
+        <small id="helpText3" class="form-text text-muted">
+            Upisuje se tačan naziv odsjeka/smjera na koji se student upisuje.
+        </small>
+    </div>
+
+    <div class="form-group">
+        <label for="vrstaStudija" >Vrsta studija koji upisujete (zaokružite odgovarajući broj pored vrste studija)</label>
+
+        <select class="form-control" id="vrstaStudija">
+            <option>Studij po starom sistemu - VI stepen (dvogodišnji)</option>
+            <option>Studij po starom sistemu - VII stepen (četverogodišnji i više)</option>
+            <option>Studij po Bolonjskom sistemu - Prvi ciklus</option>
+            <option>Studij po Bolonjskom sistemu - Drugi ciklus</option>
+            <option>Studij po Bolonjskom sistemu - Integrirani</option>
+            <option>Studij po Bolonjskom sistemu - Treći ciklus</option>
+        </select>
+
+        <small id="helpText14" class="form-text text-muted">
+            <b>Prvi ciklus</b> vodi do akademskog zvanja završenog dodiplomskog studija [degree of Bachelor] ili ekvivalenta, stečenog nakon najmanje tri i najvše
+            četiri godine studija. <b>Drugi ciklus</b> vodi do akademskog zvanja magistra li ekvivalenta, stečenog nakon završenog dodiplomskog studija,
+            traje jednu ili dvije godine. <b>Integrirani ciklus</b> vodi do akademskog zvanja doktor struke (medicina, stomatologije i veterine), odnosno magistar
+            farmacije, treaje pet ili šest godina. <b>Treći ciklus</b> vodi do akademskog zvanja doktor nauka/doktor umjetnosti i traje tri godine.
+        </small>
+    </div>
+
+    <b class="text-capitalize">PODACI O DIPLOMIRANOM STUDENTU</b>
+
+    <div class="form-group">
+        <label for="JMB" >Jedinstveni matični broj</label>
+        <input type="text" class="form-control" id="JMB" >
+    </div>
+
+    <div class="form-group">
+        <label for="imeIPrezime" >Ime i prezime</label>
+        <input type="text" class="form-control" id="imeIPrezime" >
+    </div>
+
+    <div class="form-group">
+        <label >Spol (označite)</label>
+        <label class="radio-inline form-check-label"><input type="radio" name="spolRadio">Muški</label>
+        <label class="radio-inline form-check-label"><input type="radio" name="spolRadio">Ženski</label>
+
+    </div>
+
+    <div class="form-group">
+        <label for="mjestoRodjenjaIOpcina" >Mjesto rođenja, općina</label>
+        <input type="text" class="form-control" id="mjestoRodjenjaIOpcina" >
+        <small id="helpText21" class="form-text text-muted">
+            Rođeni u inostranstvu upisuju naziv države
+        </small>
+    </div>
+
+    <div class="form-group">
+        <label>Datum rođenja</label>
+        <div class="row">
+            <div class="col-3">
+                <input type="text" class="form-control" placeholder="dan" id="datumRodjenjaDan">
+            </div>
+            <div class="col-3">
+                <input type="text" class="form-control" placeholder="mjesec" id="datumRodjenjaMjesec">
+            </div>
+            <div class="col-3">
+                <input type="text" class="form-control" placeholder="godina" id="datumRodjenjaGodina">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <label >Državljanstvo</label>
+        <label class="radio-inline form-check-label"><input type="radio" name="optradio">1. BiH</label>
+        <label class="radio-inline form-check-label"><input type="radio" name="optradio">2. BiH i strano</label>
+        <label class="radio-inline form-check-label"><input type="radio" name="optradio">3. Strano</label>
+        <input type="text" class="form-control" id="drzavljanstvoStrano">
+        <small id="helpText4" class="form-text text-muted">
+            Za odgovore 2 i 3 upišite koje državljanstvo
+        </small>
+    </div>
+
+    <div class="form-group">
+        <label for="nacionalnaPripadnost" >Nacionalna pripadnost</label>
+        <input type="text" class="form-control" id="nacionalnaPripadnost" >
+        <small id="helpText5" class="form-text text-muted">
+            Upisuju samo državljani BiH
+        </small>
+    </div>
+
+    <div class="form-group">
+        <div>
+            <label >Prebivalište studenta</label>
+            <small id="helpText6" class="form-text text-muted">
+                Mjesto stalnog stanovanja
+            </small>
+        </div>
+        <input type="text" class="form-control" id="prebivalisteStudentaDrzava" placeholder="Država">
+        <input type="text" class="form-control" id="prebivalisteStudentaEntitetDistrikt" placeholder="Entitet/Distrikt" >
+        <input type="text" class="form-control" id="prebivalisteStudentaKanton" placeholder="Kanton">
+        <input type="text" class="form-control" id="prebivalisteStudentaOpćina" placeholder="Općina">
+        <input type="text" class="form-control" id="prebivalisteStudentaMjestoAdresa" placeholder="Mjesto, adresa">
+        <small id="helpText7" class="form-text text-muted">
+            <b>Prebivalište</b> je mjesto u kojem je studentu stalno mjesto stanovanja. Studenti - državljani BiH upisuju
+            za mjesto svog prebivališta mjesto prebivališta svojih roditelja - izdržavatelja. Studenti - strani državljani, izuzev
+            onih kojih stalno žive u BiH, upisuju naziv svoje države.
+        </small>
+    </div>
+
+    <div class="form-group">
+        <label for="prethodnoObrazovanje" >Naziv prethodno završenog obrazovanja</label>
+        <input type="text" class="form-control" id="prethodnoObrazovanje" >
+        <small id="helpText111" class="form-text text-muted">
+            Upisuje se naziv prethodno završenog obrazovanja (srednje, više, visoke škole), fakulteta, akademije koju ste završili prije
+            upisa na ovu visokoškolsku ustanovu, tj. prije upisa na određeni studijski program. Ako ste prije studirali na nekoj visokoškolskoj ustanovi,
+            a niste diplomirali, upisujete naziv srednje škole koju ste prethodno završili.
+        </small>
+    </div>
+
+    <div class="form-group">
+        <label for="prethodnoObrazovanjeGod" >Godina završetka prethodnog obrazovanja</label>
+        <input type="number" class="form-control" id="prethodnoObrazovanjeGod" min="1950" max="2017">
+        <small id="helpText11" class="form-text text-muted">
+            Upisujete godinu završnog ispita -mature il igodine kada ste dobili završno svjedočanstvo za srednju školu, odnosno
+            godinu diplomiranja - završetka stuija na određenom višem ili visokoškolskom studiju.
+        </small>
+    </div>
+
+    <div class="form-group">
+        <label for="nazivDrzaveDiplome" >Naziv države u kojoj je diploma stečena</label>
+        <input type="text" class="form-control" id="nazivDrzaveDiplome" >
+        <small id="helpText13" class="form-text text-muted">
+            Upisujete naziv države u kojoj ste prethodno obrazovanje stekli.
+        </small>
+    </div>
+
+    <div class="form-group">
+        <label for="nacinStudiranja" > Način studiranja (označite)</label>
+
+        <select class="form-control" id="nacinStudiranja">
+            <option>Redovan</option>
+            <option>Redovan (samofinansirajući)</option>
+            <option>Vanredan</option>
+            <option>Učenje na daljinu</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="godinaPrvogUpisa" >Godina završetka prethodnog obrazovanja (u prvi semestar)</label>
+        <input type="number" class="form-control" id="godinaPrvogUpisa" min="1950" max="2017">
+        <small id="helpText16" class="form-text text-muted">
+            Upisujete godinu kada ste se prvi put upisali na vrstu studija koji ste zaokružili u pitanju 5.
+        </small>
+    </div>
+
+    <div class="form-group">
+        <label >Da li ste prije upisa u ovu visokoškolsku ustanovu bili upisani na nekoj drugoj visokoškolskoj ustanovi?</label>
+        <label class="radio-inline form-check-label"><input type="radio" name="prvaVisokoskolskaUstanovaRadio">Da</label>
+        <label class="radio-inline form-check-label"><input type="radio" name="prvaVisokoskolskaUstanovaRadio">Ne</label>
+    </div>
+
+    <div class="form-group">
+        <label>Ukupan broj ECTS bodova stečenih tokom studiranja</label>
+        <input type="number" class="form-control" id="brojECTSbodova">
+    </div>
+
+    <div class="form-group">
+        <label>Prosječna ocjena tokom studiranja</label>
+        <input type="number" class="form-control" id="prosjecnaOcjenaTokomStudiranja">
+    </div>
+
+    <div class="form-group">
+        <label >Da li ste tokom prethodne kalendarske godine primali stipendiju?</label>
+        <label class="radio-inline form-check-label"><input type="radio" name="stipendijaRadio">Da</label>
+        <label class="radio-inline form-check-label"><input type="radio" name="stipendijaRadio">Ne</label>
+    </div>
+
+    <div class="form-group">
+        <label>Ako je odgovor u prethodnom pitanju DA, upišite ukupan iznos stipendije na godišnjem nivou u KM:</label>
+        <input type="number" class="form-control" id="ukupanIznosStipendije">
+    </div>
+
+    <div class="form-group">
+        <h6>Status u aktivnosti</h6>
+
+        <label>roditelja - izdržavatelja </label>
+        <label class="radio-inline form-check-label"><input type="radio" name="statusUAktivnostiRoditelja">Zaposlen</label>
+        <label class="radio-inline form-check-label"><input type="radio" name="statusUAktivnostiRoditelja">Nezaposlen</label>
+        <label class="radio-inline form-check-label"><input type="radio" name="statusUAktivnostiRoditelja">Neaktivan</label>
+
+        <br>
+        <label>studenta </label>
+        <label class="radio-inline form-check-label"><input type="radio" name="statusUAktivnostiStudenta">Zaposlen</label>
+        <label class="radio-inline form-check-label"><input type="radio" name="statusUAktivnostiStudenta">Nezaposlen</label>
+        <label class="radio-inline form-check-label"><input type="radio" name="statusUAktivnostiStudenta">Neaktivan</label>
+
+        <small id="helpText18" class="form-text text-muted">
+            <b>Zaposlen.</b> Ako roditelj - izdržavatelj ili student imaju neki posao kojim obezbjeđuju sredstva za život.
+            <br><b>Nezaposlen.</b> Ako roditelj - izdržavatelj ili student nemaju nikakav posao kojim obezbjeđuju sredstva za život, ali traže posao i spremni su da počnu da ga obavljaju ukoliko bi im posao bio ponuđen.
+            <br><b>Neaktivan.</b> Ako je roditelj - izdržavatelj ili student nesposoban za rad, domaćica, penzioner, student.
+        </small>
+    </div>
+
+    <div class="form-group">
+        <h6>Zanimanje(upišite samo ako ste u prethodnom pitanju zaokružili prvi odgovor)</h6>
+
+        <label for="zanimanjeroditelja" >roditelja - izdržavatelja</label>
+        <input type="number" class="form-control" id="zanimanjeroditelja">
+
+        <label for="zanimanjestudenta" >studenata</label>
+        <input type="number" class="form-control" id="zanimanjestudenta">
+
+        <small id="helpText19" class="form-text text-muted">
+            <b>Zanimanje</b> - vrsta posla koju osoba obavlja u preduzeću, prodavnici, tvornici, itd. Potrebno je upisati što precizniji opis zanimanja, odnosno vrste posla koji osoba obavlja u preduzeću,
+            prodavnici, na poljoprivrednom gazdinstvu, i slično. Zanimanje ne mora biti u vezi sa stepenom obrazovanja ili specijalizacijom nego se veže za konkretan posao koji obavlja osoba, npr. pravnik
+            koji pruža taksi usluge po zanimanju je taksista, a ne pravnik. U svrhu omogućavanja
+            šifriranja odgovori moraju biti jasni i kompletni. Odgovor treba da je što detaljniji, npr. individualni poljoprivrednik, rudar, blagajnik, profesor, elektrotehničar, laborant, slovoslagač i dr.
+        </small>
+    </div>
+
+    <div class="form-group">
+        <h6>Status u zaposlenosti</h6>
+
+        <label>roditelja-izdržavatelja </label>
+        <label class="radio-inline form-check-label"><input type="radio" name="statusUAktivnostiRoditelja">Zaposlen</label>
+        <label class="radio-inline form-check-label"><input type="radio" name="statusUAktivnostiRoditelja">Nezaposlen</label>
+        <label class="radio-inline form-check-label"><input type="radio" name="statusUAktivnostiRoditelja">Neaktivan</label>
+
+        <br>
+        <label>studenta </label>
+        <label class="radio-inline form-check-label"><input type="radio" name="statusUAktivnostiStudenta">Zaposlen</label>
+        <label class="radio-inline form-check-label"><input type="radio" name="statusUAktivnostiStudenta">Nezaposlen</label>
+        <label class="radio-inline form-check-label"><input type="radio" name="statusUAktivnostiStudenta">Neaktivan</label>
+
+        <small id="helpText20" class="form-text text-muted">
+            <b>Poslodavci/samozaposlenici</b> su poslodavci koji upravljaju poslovnim subjektom i zapošljavaju jednog ili više zaposlenika, kao i osobe koje rade za vlastiti račun
+            i ne zapošljavaju zaposlenike, kao i vlasnici poljoprivrednog gazdinstva.
+            <br><b>Zaposlenik</b> je osoba koja radi za poslodavca u državnom/privatnom sektoru i za taj rad prima naknadnu (u novcu ili naturi)
+            <br><b>Pomažući član porodice</b> je osoba koja radi bez plaće u produzeću, obrtu ili poljoprivrednom gazdinstvu kojeg vodi njen srodnik s kojim živi u istom domaćinstvu. Ova kategorija uključuje npr: sina ili kćerku
+            koji rade u roditeljskom biznisu ili roditeljskom poljoprivrednom gazdinstvu bez plaćanja.
+        </small>
+    </div>
+
+</form>
+</div>
+</body>
+</html>

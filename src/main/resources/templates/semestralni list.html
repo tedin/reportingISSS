@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Semestralni list</title>
+    <link rel="stylesheet" href="../static/css/bootstrap.css" th:href="@{/css/bootstrap.css}"/>
+    <link rel="stylesheet" href="../static/css/bootstrap-grid.css" th:href="@{/css/bootstrap-grid.css}"/>
+    <link rel="stylesheet" href="../static/css/bootstrap-reboot.css" th:href="@{/css/bootstrap-reboot.css}"/>
+    <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}"/>
+
+</head>
+<body>
+
+<div class="container main-container">
+    <br>
+    <h2 class="text-center">LIST O PRIJAVI SEMESTRA</h2>
+    <br>
+
+    <form>
+        <h4 class="text-center">OPĆI PODACI</h4>
+
+        <div class="panel panel-default">
+            <div class="panel-body container">
+                <!-- naziv organizacione jedinice umjesto vis. ustanove! -->
+                <div class="form-group">
+                    <label for="filterFakultet" >Naziv visokoškolske ustanove</label>
+                    <select id="filterFakultet" class="form-control">
+                        <option value="sve" selected="selected"></option>
+                        <option value="fakultetALU">Akademija likovnih umjetnosti</option>
+                        <option value="fakultetASU">Akademija scenskih umjetnosti</option>
+                        <option value="fakultetAF">Arhitektonski fakultet</option>
+                        <option value="fakultetCIS">Centar za interdisciplinarne studije</option>
+                        <option value="fakultetEF">Ekonomski fakultet</option>
+                        <option value="fakultetETF">Elektrotehnički fakultet</option>
+                        <option value="fakultetFC">Farmaceutski fakultet</option>
+                        <option value="fakultetFIN">Fakultet islamskih nauka</option>
+                        <option value="fakultetFPN">Fakultet političkih nauka</option>
+                        <option value="fakultetSTO">Fakultet sporta i tjelesnog odgoja</option>
+                        <option value="fakultetKKS">Fakultet za kriminalistiku, kriminologiju i sigurnosne studije</option>
+                        <option value="fakultetFSK">Fakultet za saobraćaj i komunikacije</option>
+                        <option value="fakultetFZS">Fakultet zdravstvenih studija</option>
+                        <option value="fakultetFF">Filozofski fakultet</option>
+                        <option value="fakultetGF">Građevinski fakultet</option>
+                        <option value="fakultetKBF">Katolički bogoslovni fakultet</option>
+                        <option value="fakultetMSF">Mašinski fakultet</option>
+                        <option value="fakultetMF">Medicinski fakultet</option>
+                        <option value="fakultetMA">Muzička akademija</option>
+                        <option value="fakultetPF3">Pedagoški fakultet</option>
+                        <option value="fakultetPPF">Poljoprivredno-prehrambeni fakultet</option>
+                        <option value="fakultetPF">Pravni fakultet</option>
+                        <option value="fakultetPMF">Prirodno-matematički fakultet </option>
+                        <option value="fakultetSF">Stomatološki fakultet sa klinikama</option>
+                        <option value="fakultetSF2">Šumarski fakultet</option>
+                        <option value="fakultetVF">Veterinarski fakultet</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="brojIndexa" >Broj indexa</label>
+                    <input type="text" class="form-control" id="brojIndexa" >
+                </div>
+
+                <div class="form-group">
+                    <label for="imeImeRoditeljaPrezime" >Ime (ime jednog roditelja) prezime</label>
+                    <input type="text" class="form-control" id="imeImeRoditeljaPrezime" >
+                </div>
+
+                <div class="form-group">
+                    <label for="tipStudiranjaDropdown">Tip studiranja</label>
+                    <select class="form-control" id="tipStudiranjaDropdown">
+                        <option>redovan</option>
+                        <option>redovan samofinansirajući</option>
+                        <option>vanredan</option>
+                        <option>DL</option>
+                        <option>gost</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="semestarUpisa" >Semestar upisa</label>
+                    <input type="text" class="form-control" id="semestarUpisa" >
+                </div>
+
+                <div class="form-group">
+                    <label for="ciklusStudija">Ciklus studija</label>
+                    <select class="form-control" id="ciklusStudija">
+                        <option>Prvi</option>
+                        <option>Drugi</option>
+                        <option>Treći</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="odsjekISmjer" >Odsjek, Smjer</label>
+                    <input type="text" class="form-control" id="odsjekISmjer" >
+                </div>
+            </div>
+        </div>
+
+
+        <h4 class="text-center">PODACI O STUDENTU</h4>
+        <div class="panel panel-default">
+            <div class="panel-body container">
+
+                <div class="form-group">
+                    <label for="JMB" >JMB</label>
+                    <input type="text" class="form-control" id="JMB" >
+                </div>
+
+                <div class="form-group">
+                    <label for="danMjesecGodinaRodjenja">Dan, Mjesec i godina rođenja</label>
+                    <input type="text" class="form-control" id="danMjesecGodinaRodjenja" >
+                </div>
+
+                <div class="form-group">
+                    <label for="drzavljanstvo">Državljanstvo</label>
+                    <input type="text" class="form-control" id="drzavljanstvo" >
+                </div>
+
+
+
+                <div class="form-group">
+                    <label>Ime i prezime roditelja</label>
+                    <div class="row">
+                        <div class="col-6">
+                            <input type="text" class="form-control" placeholder="Ime i prezime oca" id="imeIPrezimeOca">
+                        </div>
+                        <div class="col-6">
+                            <input type="text" class="form-control" placeholder="Ime i prezime majke" id="imeIPrezimeMajke">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="mjestoOpcinaKantonIAdresaPrebivalista">Mjesto, općina, kanton i adresa prebivalista</label>
+                    <input type="text" class="form-control" id="mjestoOpcinaKantonIAdresaPrebivalista" >
+                </div>
+
+                <div class="form-group">
+                    <label for="adresaStanovanjaZaVrijemeSkolovanja">Adresa stanovanja za vrijeme školovanja</label>
+                    <input type="text" class="form-control" id="adresaStanovanjaZaVrijemeSkolovanja" >
+                </div>
+
+                <div class="form-group">
+                    <label>Telefon i e-mail adresa</label>
+                    <div class="row">
+                        <div class="col-6">
+                            <input type="text" class="form-control" placeholder="Tefefon">
+                        </div>
+                        <div class="col-6">
+                            <input type="email" class="form-control" placeholder="E-mail adresa">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center sub-div">
+            <button type="submit" class="btn btn-primary">Pošalji</button>
+        </div>
+    </form>
+</div>
+</body>
+
+<style>
+    .main-container {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        box-shadow: 10px 10px 5px #ccc;
+        max-width: 800px;
+        background: url("../../../../../../Desktop/upisniList/images/green.png") repeat-y center center fixed;
+        background-size: inherit;
+        border: solid 15px rgb(255, 255, 255);
+    }
+</style>
+</html>

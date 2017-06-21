@@ -1,0 +1,1186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2017-06-20T08:53:56 -->
+<jasperReport xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xmlns="http://jasperreports.sourceforge.net/jasperreports"
+              xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
+              name="potvrda_redovan_student" pageWidth="595" pageHeight="842" columnWidth="515" leftMargin="40"
+              rightMargin="40" topMargin="40" bottomMargin="40" uuid="754dcbb3-fcf9-4b93-ba6c-5ec707c2879e">
+    <property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+    <property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+    <property name="com.jaspersoft.studio.unit." value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+    <parameter name="faculty" class="java.lang.String">
+        <defaultValueExpression><![CDATA["Testni fakultet"]]></defaultValueExpression>
+    </parameter>
+    <parameter name="studentFullName" class="java.lang.String">
+        <parameterDescription><![CDATA[]]></parameterDescription>
+        <defaultValueExpression><![CDATA["Student (Otac) Studentić"]]></defaultValueExpression>
+    </parameter>
+    <parameter name="indexNumber" class="java.lang.String">
+        <parameterDescription><![CDATA[]]></parameterDescription>
+        <defaultValueExpression><![CDATA["1234"]]></defaultValueExpression>
+    </parameter>
+    <parameter name="dob" class="java.lang.String">
+        <defaultValueExpression><![CDATA["31.12.1999"]]></defaultValueExpression>
+    </parameter>
+    <parameter name="place" class="java.lang.String">
+        <parameterDescription><![CDATA[]]></parameterDescription>
+        <defaultValueExpression><![CDATA["Test"]]></defaultValueExpression>
+    </parameter>
+    <parameter name="municipality" class="java.lang.String">
+        <parameterDescription><![CDATA[]]></parameterDescription>
+        <defaultValueExpression><![CDATA["Test"]]></defaultValueExpression>
+    </parameter>
+    <parameter name="country" class="java.lang.String">
+        <defaultValueExpression><![CDATA["Test"]]></defaultValueExpression>
+    </parameter>
+    <parameter name="academicYear" class="java.lang.String">
+        <defaultValueExpression><![CDATA["2016 / 2017."]]></defaultValueExpression>
+    </parameter>
+    <parameter name="semester" class="java.lang.String">
+        <defaultValueExpression><![CDATA["I (prvi)"]]></defaultValueExpression>
+    </parameter>
+    <parameter name="studyCycle" class="java.lang.Integer">
+        <defaultValueExpression><![CDATA[2]]></defaultValueExpression>
+    </parameter>
+    <parameter name="studentType" class="java.lang.String">
+        <defaultValueExpression><![CDATA["redovan samofinansirajući"]]></defaultValueExpression>
+    </parameter>
+    <parameter name="department" class="java.lang.String">
+        <defaultValueExpression><![CDATA["Testni odsjek"]]></defaultValueExpression>
+    </parameter>
+    <parameter name="studyProgram" class="java.lang.String">
+        <defaultValueExpression><![CDATA["Testni studijski program"]]></defaultValueExpression>
+    </parameter>
+    <parameter name="date" class="java.lang.String">
+        <defaultValueExpression><![CDATA["10.5.2017.god."]]></defaultValueExpression>
+    </parameter>
+    <parameter name="jmbg" class="java.lang.String">
+        <defaultValueExpression><![CDATA["12345567890123"]]></defaultValueExpression>
+    </parameter>
+    <parameter name="citizenship" class="java.lang.String">
+        <defaultValueExpression><![CDATA["BIH"]]></defaultValueExpression>
+    </parameter>
+    <parameter name="highSchool" class="java.lang.String">
+        <defaultValueExpression><![CDATA["Sarajevo, 2015"]]></defaultValueExpression>
+    </parameter>
+    <parameter name="father" class="java.lang.String">
+        <defaultValueExpression><![CDATA["Otac Studentić"]]></defaultValueExpression>
+    </parameter>
+    <parameter name="mother" class="java.lang.String">
+        <defaultValueExpression><![CDATA["Majka Studentić"]]></defaultValueExpression>
+    </parameter>
+    <parameter name="fatherOccupation" class="java.lang.String">
+        <defaultValueExpression><![CDATA["Zanimanje 1"]]></defaultValueExpression>
+    </parameter>
+    <parameter name="motherOccupation" class="java.lang.String">
+        <parameterDescription><![CDATA[]]></parameterDescription>
+        <defaultValueExpression><![CDATA["Zanimanje 2"]]></defaultValueExpression>
+    </parameter>
+    <parameter name="canton" class="java.lang.String">
+        <defaultValueExpression><![CDATA["Hercegovačko-neretvanski kanton"]]></defaultValueExpression>
+    </parameter>
+    <parameter name="currentAdress" class="java.lang.String">
+        <defaultValueExpression><![CDATA["Test 143"]]></defaultValueExpression>
+    </parameter>
+    <parameter name="telNumber" class="java.lang.String">
+        <defaultValueExpression><![CDATA["033/123-456"]]></defaultValueExpression>
+    </parameter>
+    <parameter name="eMail" class="java.lang.String">
+        <defaultValueExpression><![CDATA["test.test@test.com"]]></defaultValueExpression>
+    </parameter>
+    <parameter name="facultyPlace" class="java.lang.String">
+        <defaultValueExpression><![CDATA["Sarajevu"]]></defaultValueExpression>
+    </parameter>
+    <parameter name="previousSemester" class="java.lang.Integer">
+        <defaultValueExpression><![CDATA[1]]></defaultValueExpression>
+    </parameter>
+    <parameter name="placeOfBirth" class="java.lang.String">
+        <defaultValueExpression><![CDATA["mjesto"]]></defaultValueExpression>
+    </parameter>
+    <queryString language="SQL">
+        <![CDATA[]]>
+    </queryString>
+    <background>
+        <band splitType="Stretch"/>
+    </background>
+    <detail>
+        <band height="762" splitType="Stretch">
+            <staticText>
+                <reportElement x="0" y="380" width="50" height="20" uuid="8c4a58f7-d7ca-4630-93b5-d88d000954ff">
+                    <property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+                </reportElement>
+                <textElement textAlignment="Left" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[1. JMBG]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="50" y="380" width="464" height="20" uuid="4680dbfe-1f7e-4b85-9cda-f03fde91c446"/>
+                <box bottomPadding="0">
+                    <pen lineWidth="1.0"/>
+                    <topPen lineWidth="0.0"/>
+                    <leftPen lineWidth="0.0"/>
+                    <bottomPen lineWidth="0.5"/>
+                    <rightPen lineWidth="0.0"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{jmbg}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="0" y="415" width="156" height="20" uuid="f171bab8-f3f5-418e-a05d-6ef3c6556fb5"/>
+                <textElement textAlignment="Left" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[2. Dan, mjesec i godina rođenja]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="485" width="90" height="20" uuid="75ec647f-8e77-42b0-88ec-ceb5c7ae12af"/>
+                <textElement textAlignment="Left" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[4. Državljanstvo]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="520" width="128" height="20" uuid="0311c49d-72fe-48f1-87ac-5d3d79e157cd">
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <textElement textAlignment="Left" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[5. Ime i prezime roditelja]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="360" y="690" width="154" height="16" uuid="d6167719-a9d3-49d4-8e81-b5138daaa742"/>
+                <textElement textAlignment="Center">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[Potpis Studenta]]></text>
+            </staticText>
+            <textField isBlankWhenNull="true">
+                <reportElement x="360" y="720" width="154" height="20" uuid="5b40ce3b-773e-40bb-b16e-143a6b315e6c"/>
+                <box>
+                    <bottomPen lineWidth="0.5" lineStyle="Dashed"/>
+                </box>
+                <textElement>
+                    <font fontName="SansSerif" pdfEncoding="Cp1250"/>
+                </textElement>
+            </textField>
+            <staticText>
+                <reportElement x="143" y="320" width="228" height="30" uuid="264dbf24-1f93-4041-ad37-6f08bba79d4d"/>
+                <textElement textAlignment="Center">
+                    <font fontName="SansSerif" size="16" isBold="true" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[PODACI O STUDENTU]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="565" width="78" height="20" uuid="9dd6a2f8-32f0-4c34-b355-f4b236a704d8">
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <textElement textAlignment="Left" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[6. Prebivalište]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="156" y="415" width="358" height="20" uuid="5aeb312e-e6f6-4e0d-b610-d8328b51b5c6"/>
+                <box bottomPadding="0">
+                    <pen lineWidth="1.0"/>
+                    <topPen lineWidth="0.0"/>
+                    <leftPen lineWidth="0.0"/>
+                    <bottomPen lineWidth="0.5"/>
+                    <rightPen lineWidth="0.0"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{dob}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="91" y="485" width="424" height="20" uuid="def950dc-3a89-4614-9ad4-a04cd28eb419"/>
+                <box bottomPadding="0">
+                    <pen lineWidth="1.0"/>
+                    <topPen lineWidth="0.0"/>
+                    <leftPen lineWidth="0.0"/>
+                    <bottomPen lineWidth="0.5"/>
+                    <rightPen lineWidth="0.0"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{citizenship}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="140" y="520" width="182" height="20" uuid="0df94789-e748-4831-948b-7c1fe3c4c434"/>
+                <box bottomPadding="0">
+                    <pen lineWidth="1.0"/>
+                    <topPen lineWidth="0.0"/>
+                    <leftPen lineWidth="0.0"/>
+                    <bottomPen lineWidth="0.5"/>
+                    <rightPen lineWidth="0.0"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{father}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="330" y="520" width="184" height="20" uuid="5af3662c-9084-4972-82f6-aab8c4f79161"/>
+                <box bottomPadding="0">
+                    <pen lineWidth="1.0"/>
+                    <topPen lineWidth="0.0"/>
+                    <leftPen lineWidth="0.0"/>
+                    <bottomPen lineWidth="0.5"/>
+                    <rightPen lineWidth="0.0"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{mother}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="330" y="540" width="184" height="12" uuid="1d2a3607-ed0c-42e6-94e9-12e95c6a885e">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <textElement textAlignment="Center" verticalAlignment="Top">
+                    <font fontName="SansSerif" size="8" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[(majka)]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="140" y="540" width="182" height="12" uuid="863ee887-58aa-4867-8694-8a7a5b565454">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <textElement textAlignment="Center" verticalAlignment="Top">
+                    <font fontName="SansSerif" size="8" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[(otac)]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="80" y="565" width="434" height="20" uuid="4c970963-f9b2-42f0-8ee0-0b65be436c89"/>
+                <box bottomPadding="0">
+                    <pen lineWidth="1.0"/>
+                    <topPen lineWidth="0.0"/>
+                    <leftPen lineWidth="0.0"/>
+                    <bottomPen lineWidth="0.5"/>
+                    <rightPen lineWidth="0.0"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression>
+                    <![CDATA[$P{place} + ", općina " + $P{municipality} + ", " + $P{canton} + ", " + $P{country}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="0" y="600" width="218" height="20" uuid="6d273133-4ef5-4165-a348-c68248bccbf3">
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <textElement textAlignment="Left" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[7. Adresa stanovanja za vrijeme školovanja]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="80" y="585" width="434" height="12" uuid="4cb40838-53c2-42cf-ab5a-6b4157388557">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <textElement textAlignment="Center" verticalAlignment="Top">
+                    <font fontName="SansSerif" size="8" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[(mjesto, općina, kanton, država)]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="220" y="600" width="294" height="20" uuid="c89c1aa6-8157-4253-ad1b-eeebb6883b2f"/>
+                <box bottomPadding="0">
+                    <pen lineWidth="1.0"/>
+                    <topPen lineWidth="0.0"/>
+                    <leftPen lineWidth="0.0"/>
+                    <bottomPen lineWidth="0.5"/>
+                    <rightPen lineWidth="0.0"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{currentAdress}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="0" y="635" width="50" height="20" uuid="02dae8ff-d58d-40d9-905c-e630aa135cbc">
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <textElement textAlignment="Left" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[8. Telefon]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="51" y="635" width="130" height="20" uuid="b299fae7-2c88-425e-8674-c1a51897dc12"/>
+                <box bottomPadding="0">
+                    <pen lineWidth="1.0"/>
+                    <topPen lineWidth="0.0"/>
+                    <leftPen lineWidth="0.0"/>
+                    <bottomPen lineWidth="0.5"/>
+                    <rightPen lineWidth="0.0"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{telNumber}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="194" y="635" width="40" height="20" uuid="9529d2cc-2955-4989-82e0-6144d0ab45dd"/>
+                <textElement textAlignment="Left" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[e-mail]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="233" y="635" width="282" height="20" uuid="8d02550a-a7fb-4a2f-9bea-6826d25ff82b"/>
+                <box bottomPadding="0">
+                    <pen lineWidth="1.0"/>
+                    <topPen lineWidth="0.0"/>
+                    <leftPen lineWidth="0.0"/>
+                    <bottomPen lineWidth="0.5"/>
+                    <rightPen lineWidth="0.0"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{eMail}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="0" y="720" width="8" height="20" uuid="a269785c-5d7b-4490-b5ee-4c2aa083c93e"/>
+                <textElement textAlignment="Left" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[U]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="7" y="720" width="110" height="20" uuid="fd7e31d6-37a2-4c93-982a-a9463548b8df"/>
+                <box bottomPadding="0">
+                    <pen lineWidth="1.0"/>
+                    <topPen lineWidth="0.0"/>
+                    <leftPen lineWidth="0.0"/>
+                    <bottomPen lineWidth="0.5"/>
+                    <rightPen lineWidth="0.0"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{facultyPlace}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="116" y="720" width="40" height="20" uuid="5d00c1ed-c70b-4b11-b083-0f780b98f503"/>
+                <textElement textAlignment="Left" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[, dana]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="156" y="720" width="80" height="20" uuid="5eba6b9d-4c24-43ab-ad27-6b3392136bad"/>
+                <box bottomPadding="0">
+                    <pen lineWidth="1.0"/>
+                    <topPen lineWidth="0.0"/>
+                    <leftPen lineWidth="0.0"/>
+                    <bottomPen lineWidth="0.5"/>
+                    <rightPen lineWidth="0.0"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{date}]]></textFieldExpression>
+            </textField>
+            <textField isStretchWithOverflow="true" pattern="">
+                <reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="29" width="260"
+                               height="20" uuid="d90d17f5-7962-40fd-ab11-4aa00a817e78"/>
+                <box>
+                    <bottomPen lineWidth="0.5"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Middle" rotation="None">
+                    <font fontName="SansSerif" size="11" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{faculty}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="0" y="10" width="260" height="19" uuid="3528e530-3f09-41e0-a176-553ec4c9d7ab"/>
+                <textElement textAlignment="Center" verticalAlignment="Top" markup="none">
+                    <font fontName="SansSerif" size="11" isBold="true" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[U N I V E R Z I T E T  U  S A R A J E V U]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="400" y="30" width="115" height="20" uuid="829a57d9-0e08-412a-8e91-49c80e60a104">
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <box bottomPadding="0">
+                    <bottomPen lineWidth="0.5"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="12" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{indexNumber}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="330" y="30" width="70" height="20" uuid="a3426b80-92f6-4a92-a1b8-31db92cb1fea">
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[Broj indexa]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="143" y="102" width="228" height="38" uuid="a6bc9fbe-af5b-450e-acd5-7e200ed5031c"/>
+                <textElement textAlignment="Center">
+                    <font fontName="SansSerif" size="30" isBold="true" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[LIST]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="0" y="200" width="310" height="20" uuid="2c1b173e-6857-47f8-8787-a1d77dc01961">
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <box bottomPadding="0">
+                    <pen lineWidth="0.5"/>
+                    <topPen lineWidth="0.0"/>
+                    <leftPen lineWidth="0.0"/>
+                    <bottomPen lineWidth="0.5"/>
+                    <rightPen lineWidth="0.0"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="13" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{studentFullName}.toUpperCase()]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="381" y="200" width="133" height="20" uuid="c165a1c8-471c-498b-a914-b3ab7bb4e55b">
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <box bottomPadding="0">
+                    <bottomPen lineWidth="0.5"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{studentType}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="310" y="200" width="71" height="20" uuid="cb5dd09b-6153-48db-9faf-de374dd9d338">
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[upisuje se kao]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="232" width="47" height="15" uuid="15b24608-29a9-4fce-a1a1-3bb0d9873e73">
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <textElement textAlignment="Left" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[student u]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="151" y="232" width="42" height="15" uuid="152bf4ab-7c85-4a4d-8996-7fa00b8fcfb6"/>
+                <box bottomPadding="0">
+                    <pen lineWidth="1.0"/>
+                    <topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                    <leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                    <bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+                    <rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression>
+                    <![CDATA[(($P{studyCycle} == 1) ? "prvog" : (($P{studyCycle} == 2) ? "drugog" : "trećeg"))]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="270" y="232" width="245" height="15" uuid="bf60f509-e3d0-4eb0-b6fe-dbfabc2992e1">
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <box bottomPadding="0">
+                    <pen lineWidth="0.5"/>
+                    <topPen lineWidth="0.0"/>
+                    <leftPen lineWidth="0.0"/>
+                    <bottomPen lineWidth="0.5"/>
+                    <rightPen lineWidth="0.0"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{department}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="0" y="220" width="310" height="12" uuid="f130c42e-a282-4ad6-8fd2-9337456eca4a">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <textElement textAlignment="Center" verticalAlignment="Top">
+                    <font fontName="SansSerif" size="8" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[(ime, ime jednog roditelja, prezime)]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="103" y="232" width="48" height="15" uuid="66bf1dbd-f889-4bdd-820e-5fa0687f90c9">
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[semestar]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="47" y="232" width="56" height="15" uuid="80ed9b41-6284-461c-b96d-f1eb1d07bb84"/>
+                <box bottomPadding="0">
+                    <pen lineWidth="1.0"/>
+                    <topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                    <leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                    <bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+                    <rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{semester}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="193" y="232" width="77" height="15" uuid="4234f755-4961-444a-8cdf-448fccfd83d5">
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[ciklusa studija, ]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="30" y="255" width="230" height="15" uuid="7e58d480-c7d4-4c93-b472-3e24f83f1a85">
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <box bottomPadding="0">
+                    <pen lineWidth="0.5"/>
+                    <topPen lineWidth="0.0"/>
+                    <leftPen lineWidth="0.0"/>
+                    <bottomPen lineWidth="0.5"/>
+                    <rightPen lineWidth="0.0"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{studyProgram}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="0" y="255" width="30" height="15" uuid="7ba7d157-4354-4e0f-b08a-1750c57fb1ba">
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <textElement textAlignment="Left" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[smjer]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="270" y="247" width="245" height="12" uuid="b55b6498-97ee-4029-98b4-cbc922121db7">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <textElement textAlignment="Center" verticalAlignment="Top">
+                    <font fontName="SansSerif" size="8" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[(odsjek)]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="49" width="9" height="20" uuid="0b2b6532-e5b1-4b3e-a089-b3d05a63f5f4"/>
+                <textElement textAlignment="Left" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[U]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="9" y="49" width="251" height="20" uuid="a968051d-a4b1-4fe5-92ed-fd0dffa05693"/>
+                <box bottomPadding="0">
+                    <pen lineWidth="1.0"/>
+                    <topPen lineWidth="0.0"/>
+                    <leftPen lineWidth="0.0"/>
+                    <bottomPen lineWidth="0.5"/>
+                    <rightPen lineWidth="0.0"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{facultyPlace}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="0" y="450" width="210" height="20" uuid="4a970695-97b5-48ca-9918-7d93a7f3a0f5"/>
+                <textElement textAlignment="Left" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[3. Mjesto rođenja, općina, kanton, država]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="210" y="440" width="304" height="30" uuid="f97fe69b-3a7f-409c-9ec1-03503def3f0b"/>
+                <box bottomPadding="0">
+                    <pen lineWidth="1.0"/>
+                    <topPen lineWidth="0.0"/>
+                    <leftPen lineWidth="0.0"/>
+                    <bottomPen lineWidth="0.5"/>
+                    <rightPen lineWidth="0.0"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression>
+                    <![CDATA[$P{placeOfBirth} + ", " +$P{municipality} + ", "  + $P{canton} + ", " + $P{country}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="127" y="140" width="260" height="19" uuid="4ea824e4-2ac2-452f-b01e-49f9ef242c42"/>
+                <textElement textAlignment="Center" verticalAlignment="Top" markup="none">
+                    <font fontName="SansSerif" size="11" isBold="true" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[O PRIJAVI SEMESTRA]]></text>
+            </staticText>
+        </band>
+        <band height="748">
+            <rectangle>
+                <reportElement x="340" y="275" width="70" height="25" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="28dd132b-e004-411c-9de3-655c631c56a9"/>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="340" y="287" width="140" height="13" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="97bb8bb7-79cc-49b7-acc8-ce1c364b6d76"/>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="340" y="275" width="140" height="25" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="a141eb4a-ea17-4c46-b6bc-09e183911a67"/>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="340" y="250" width="175" height="50" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="83aed5d5-0f94-4fdd-a43e-d77213e63f05">
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="340" y="287" width="35" height="313" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="f8cf5e6b-510b-47ed-86a7-d8a437dbd152">
+                    <property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+                    <property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="375" y="287" width="35" height="313" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="1d212acc-2724-47e3-810c-7c2b1dd1e104">
+                    <property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+                    <property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="410" y="287" width="35" height="313" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="6372da39-6360-4ed7-86e8-2c83d5e249e3">
+                    <property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+                    <property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="445" y="287" width="35" height="313" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="b02d9229-fd74-4a92-8443-8bb5d1e2ac22">
+                    <property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+                    <property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="480" y="250" width="35" height="350" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="69617845-e965-40d2-aaa2-e9ccc012fe7f">
+                    <property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+                    <property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="250" width="160" height="350" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="4b44c2e0-6258-43d0-ae8b-26d9a225ae82">
+                    <property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="250" width="340" height="50" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="9082acc3-d3f5-4f66-a8e8-55c89c2aa912">
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="575" width="515" height="25" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="880a26f8-e0e4-49ba-a61e-9b98cbcb1327">
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="550" width="515" height="25" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="0735f4a4-2ab2-4279-9242-d8a8fd385e55">
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="525" width="515" height="25" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="0fa466a3-2cc9-4ef8-8c3f-d0acd9acfe3a">
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="500" width="515" height="25" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="91cac202-7fb0-4612-84af-eae123ab7338">
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="475" width="515" height="25" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="76b23a1f-cc58-4ec7-a47f-f09cad3b628e">
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="450" width="515" height="25" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="8228f377-2b0d-46df-9179-775ade32fa73">
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="425" width="515" height="25" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="4023768f-09d7-4cd7-b5e4-a122bf056c81">
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="400" width="515" height="25" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="69bc714b-db34-40a9-a1fa-dddeab482a06">
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="375" width="515" height="25" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="df3f85a3-eb28-4610-be29-def8e8c6c9b2">
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="350" width="515" height="25" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="39995159-79c4-4426-8db2-6db9143127d1">
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="325" width="515" height="25" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="208ce394-c3a6-4f34-bdb8-ea8d6634cc9e">
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="300" width="515" height="25" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="101dc0f7-a54d-458f-820a-59cb96339980">
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                    <property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <staticText>
+                <reportElement x="52" y="10" width="410" height="30" uuid="fbe002a0-c7b5-45dd-ac23-95f148864ddb">
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="13" isBold="true" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[PODACI O SEMESTRU]]></text>
+            </staticText>
+            <textField isStretchWithOverflow="true" pattern="">
+                <reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="48" width="210"
+                               height="20" uuid="c3160bb1-a172-46ec-a631-dbe8cf29bf56"/>
+                <box>
+                    <bottomPen lineWidth="0.5"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Bottom" rotation="None">
+                    <font fontName="SansSerif" size="11" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{faculty}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="211" y="48" width="89" height="20" uuid="325386fc-bc3f-41e8-9919-82e0b242a3f8"/>
+                <textElement textAlignment="Left" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[fakultet semestar]]></text>
+            </staticText>
+            <textField isStretchWithOverflow="true" pattern="">
+                <reportElement positionType="Float" stretchType="RelativeToTallestObject" x="300" y="48" width="214"
+                               height="20" uuid="4225ae27-c467-42be-b697-c48e06ae21e1"/>
+                <box>
+                    <bottomPen lineWidth="0.5"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Bottom" rotation="None">
+                    <font fontName="SansSerif" size="11" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{previousSemester}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="0" y="70" width="117" height="20" uuid="a244cd13-9726-49fc-876d-54857b52911e"/>
+                <textElement textAlignment="Left" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[(odsjek, grupa smjer)]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="309" y="75" width="193" height="15" uuid="92bb715f-6446-4f9f-b726-add94cd48d08">
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <box bottomPadding="0">
+                    <pen lineWidth="0.5"/>
+                    <topPen lineWidth="0.0"/>
+                    <leftPen lineWidth="0.0"/>
+                    <bottomPen lineWidth="0.5"/>
+                    <rightPen lineWidth="0.0"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{studyProgram}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="117" y="75" width="192" height="15" uuid="a7618ef1-8580-4e83-8604-b081092d218a">
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <box bottomPadding="0">
+                    <pen lineWidth="0.5"/>
+                    <topPen lineWidth="0.0"/>
+                    <leftPen lineWidth="0.0"/>
+                    <bottomPen lineWidth="0.5"/>
+                    <rightPen lineWidth="0.0"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{department}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="0" y="130" width="117" height="20" uuid="7d0f65d5-e4ba-4d4b-b2ac-9d153abb05c0"/>
+                <textElement textAlignment="Left" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[Ime i prezime studenta]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="117" y="130" width="398" height="20" uuid="878c7d94-354d-44db-b48f-61952395e614">
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <box bottomPadding="0">
+                    <pen lineWidth="0.5"/>
+                    <topPen lineWidth="0.0"/>
+                    <leftPen lineWidth="0.0"/>
+                    <bottomPen lineWidth="0.5"/>
+                    <rightPen lineWidth="0.0"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="13" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{studentFullName}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="0" y="160" width="79" height="20" uuid="5fce04d5-6da5-471e-b3c5-d170e4b59608"/>
+                <textElement textAlignment="Left" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[Slušao - la je u ]]></text>
+            </staticText>
+            <textField isStretchWithOverflow="true" pattern="">
+                <reportElement positionType="Float" stretchType="RelativeToTallestObject" x="79" y="160" width="48"
+                               height="20" uuid="6c8e9372-6456-4305-8db7-bb0e7018fb17"/>
+                <box>
+                    <bottomPen lineWidth="0.5"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Middle" rotation="None">
+                    <font fontName="SansSerif" size="11" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{previousSemester}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="127" y="160" width="53" height="20" uuid="529d5c1b-2033-4ccb-a7f3-d993a166d1e7"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[semestru]]></text>
+            </staticText>
+            <textField isStretchWithOverflow="true" pattern="">
+                <reportElement positionType="Float" stretchType="RelativeToTallestObject" x="181" y="160" width="87"
+                               height="20" uuid="56d26ebe-e5bf-466f-b74d-8630153462a7"/>
+                <box>
+                    <bottomPen lineWidth="0.5"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Middle" rotation="None">
+                    <font fontName="SansSerif" size="11" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{academicYear}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="268" y="160" width="102" height="20" uuid="7a78ef03-d010-4c3f-b28e-0444388053f9"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[školske godine kao]]></text>
+            </staticText>
+            <textField isStretchWithOverflow="true" pattern="">
+                <reportElement positionType="Float" stretchType="RelativeToTallestObject" x="370" y="160" width="144"
+                               height="20" uuid="a1d17e04-73e2-4189-8f7c-8d6995f5644c"/>
+                <box>
+                    <bottomPen lineWidth="0.5"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Middle" rotation="None">
+                    <font fontName="SansSerif" size="11" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{studentType}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="0" y="180" width="79" height="20" uuid="11a3f6fd-40f7-4353-8588-de2e96cdd388"/>
+                <textElement textAlignment="Left" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[student]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="250" width="160" height="50" uuid="7190ae29-f755-4b6a-bb7c-921e56713cd3"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[Naziv predmeta]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="160" y="250" width="180" height="50" uuid="0327c4e1-e78b-4dda-8fe1-3609d7adbe29"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[Prezime i ime nastavnika]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="480" y="250" width="34" height="50" uuid="9155808f-874d-4dd9-9a41-928540f09d7d"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[ECTS]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="340" y="250" width="140" height="25" uuid="77d3edb7-04da-493a-be85-ac9e4c6ac7ce"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[Broj časova nastave]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="340" y="275" width="70" height="12" uuid="c6dd462a-27c2-4483-944e-ac978ca179ae"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="7" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[Sedmično]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="410" y="275" width="70" height="12" uuid="bb740590-4e4c-4772-8c43-4414bb8726af"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="7" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[Ukupno u semestru]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="340" y="287" width="35" height="13" uuid="95f87dd1-7e99-4228-8996-6b93af4acb36"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="7" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[predavanja]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="375" y="287" width="35" height="13" uuid="acdf238b-fb4b-43ec-9de8-4fec8b456d26"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="7" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[vježbi]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="410" y="287" width="35" height="13" uuid="fe76a291-713f-438e-82fb-0aefc6ad5ba2"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="7" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[predavanja]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="445" y="287" width="35" height="13" uuid="a7af7ad7-1e51-4db6-b4c7-06ba3d1e85ff"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="7" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[vježbi]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="1" y="630" width="154" height="16" uuid="53b1132c-d00a-4a16-8dd8-758e5f2406ef"/>
+                <textElement textAlignment="Center">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[Potpis Studenta]]></text>
+            </staticText>
+            <textField isBlankWhenNull="true">
+                <reportElement x="1" y="660" width="154" height="20" uuid="d36be7b0-62e6-4c91-840a-24c2c12f9377"/>
+                <box>
+                    <bottomPen lineWidth="0.5" lineStyle="Dashed"/>
+                </box>
+                <textElement>
+                    <font fontName="SansSerif" pdfEncoding="Cp1250"/>
+                </textElement>
+            </textField>
+            <staticText>
+                <reportElement x="0" y="700" width="8" height="20" uuid="29da881f-2715-4033-a8ca-544f2816c4a5"/>
+                <textElement textAlignment="Left" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[U]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="7" y="700" width="110" height="20" uuid="72637ecc-931f-403e-b3db-174566f155b0"/>
+                <box bottomPadding="0">
+                    <pen lineWidth="1.0"/>
+                    <topPen lineWidth="0.0"/>
+                    <leftPen lineWidth="0.0"/>
+                    <bottomPen lineWidth="0.5"/>
+                    <rightPen lineWidth="0.0"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{facultyPlace}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="116" y="700" width="40" height="20" uuid="fa46baff-37dd-4395-8c8e-42d1584555e9"/>
+                <textElement textAlignment="Left" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[, dana]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="156" y="700" width="80" height="20" uuid="987170d4-ef85-4190-b37b-9af256accaa6"/>
+                <box bottomPadding="0">
+                    <pen lineWidth="1.0"/>
+                    <topPen lineWidth="0.0"/>
+                    <leftPen lineWidth="0.0"/>
+                    <bottomPen lineWidth="0.5"/>
+                    <rightPen lineWidth="0.0"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{date}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="260" y="700" width="40" height="20" uuid="2875cb13-0729-4947-9cd8-2e17bd5a7c49"/>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[M. P.]]></text>
+            </staticText>
+            <textField isBlankWhenNull="true">
+                <reportElement x="361" y="700" width="154" height="20" uuid="662fe265-087a-415e-8629-245ebb03809e"/>
+                <box>
+                    <bottomPen lineWidth="0.5" lineStyle="Dashed"/>
+                </box>
+                <textElement>
+                    <font fontName="SansSerif" pdfEncoding="Cp1250"/>
+                </textElement>
+            </textField>
+            <staticText>
+                <reportElement x="361" y="660" width="154" height="30" uuid="21760fbf-ad7d-4d13-b9dd-4e3d11454ce7"/>
+                <textElement textAlignment="Center">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[Za visokoškolsku ustanovu (ovlašteno lice):]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="330" y="610" width="185" height="40" uuid="274868ac-2b63-40df-9c37-ed9642410490"/>
+                <textElement textAlignment="Center">
+                    <font fontName="SansSerif" size="9" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text>
+                    <![CDATA[Na osnovu podataka iz Upisnice utvrđuje se da su nastavnici potvrdili uredno pohađanje predavanja i drugih oblika nastave]]></text>
+            </staticText>
+        </band>
+    </detail>
+</jasperReport>

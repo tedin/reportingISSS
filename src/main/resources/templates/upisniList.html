@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Upisni List</title>
+    <link rel="stylesheet" href="../static/css/bootstrap.css" th:href="@{/css/bootstrap.css}"/>
+    <link rel="stylesheet" href="../static/css/bootstrap-grid.css" th:href="@{/css/bootstrap-grid.css}"/>
+    <link rel="stylesheet" href="../static/css/bootstrap-reboot.css" th:href="@{/css/bootstrap-reboot.css}"/>
+    <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}"/>
+
+</head>
+<body>
+<div class="container main-container">
+    <br>
+    <h2 class="text-center">UPISNI LIST</h2>
+    <br>
+
+    <form>
+        <h4 class="text-center">OPĆI PODACI</h4>
+
+        <div class="panel panel-default">
+            <div class="panel-body container">
+                <div class="form-group">
+                    <label for="nazivVisokoskolskeUstanove" >Naziv visokoškolske ustanove</label>
+                    <input type="text" class="form-control" id="nazivVisokoskolskeUstanove" >
+                </div>
+
+                <div class="form-group">
+                    <label for="brojIndexa" >Broj indeksa</label>
+                    <input type="text" class="form-control" id="brojIndexa" >
+                </div>
+
+
+                <div class="form-group">
+                    <label>Ime, ime roditelja, prezime</label>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
+                            <input type="text" class="form-control" id="ime" placeholder="Ime">
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
+                            <input type="text" class="form-control" id="imeRoditelja" placeholder="Ime roditelja" >
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
+                            <input type="text" class="form-control" id="prezime" placeholder="Prezime" >
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="tipStudiranjaDropdown">Tip studiranja</label>
+                    <select class="form-control" id="tipStudiranjaDropdown">
+                        <option>redovan</option>
+                        <option>redovan samofinansirajući</option>
+                        <option>vanredan</option>
+                        <option>DL</option>
+                        <option>gost</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="semestarUpisa" >Semestar upisa</label>
+                    <input type="text" class="form-control" id="semestarUpisa" >
+                </div>
+
+                <div class="form-group">
+                    <label for="ciklusStudija">Ciklus studija <small>(izaberite ukoliko ste student Bolonjskog studija)</small></label>
+                    <select class="form-control" id="ciklusStudija">
+                        <option></option>
+                        <option>prvi</option>
+                        <option>drugi</option>
+                        <option>treći</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="odsjekISmjer" >Odsjek i smjer</label>
+                    <input type="text" class="form-control" id="odsjekISmjer" >
+                </div>
+
+            </div>
+        </div>
+
+        <br/>
+        <h4 class="text-center">PODACI O STUDENTU</h4>
+
+        <div class="panel panel-default">
+            <div class="panel-body container">
+
+                        <div class="form-group">
+                            <label for="JMB" >JMB</label>
+                            <input type="text" class="form-control" id="JMB" >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="danMjesecGodinaRodjenja">Dan, mjesec i godina rođenja</label>
+                            <input type="text" class="form-control" id="danMjesecGodinaRodjenja" >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="drzavljanstvo">Državljanstvo</label>
+                            <input type="text" class="form-control" id="drzavljanstvo" >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="nacionalnaPripadnost">Nacionalna pripadnost </label>
+                            <input type="text" class="form-control" id="nacionalnaPripadnost" >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="gdjeIKadaJeZavršioSrednjuSkolu">Gdje i kada je završio srednju školu</label>
+                            <input type="text" class="form-control" id="gdjeIKadaJeZavršioSrednjuSkolu" >
+                        </div>
+
+                        <div class="form-group">
+                            <label>Ime i prezime roditelja</label>
+                            <div class="row">
+                                <div class="col-6">
+                                    <input type="text" class="form-control" placeholder="Ime i prezime oca" id="imeIPrezimeOca">
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" class="form-control" placeholder="Ime i prezime majke" id="imeIPrezimeMajke">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Zanimanje roditelja</label>
+                            <div class="row">
+                                <div class="col-6">
+                                    <input type="text" class="form-control" placeholder="Zanimanje oca" id="zanimanjeOca">
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" class="form-control" placeholder="Zanimanje majke" id="zanimanjeMajke">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="mjestoOpcinaKantonIAdresaPrebivalista">Mjesto, općina, kanton i adresa prebivalista</label>
+                            <input type="text" class="form-control" id="mjestoOpcinaKantonIAdresaPrebivalista" >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="adresaStanovanjaZaVrijemePrebivalista">Adresa stanovanja za vrijeme prebivališta</label>
+                            <input type="text" class="form-control" id="adresaStanovanjaZaVrijemePrebivalista" >
+                        </div>
+
+                        <div class="form-group">
+                            <label>Telefon i e-mail adresa</label>
+                            <div class="row">
+                                <div class="col-6">
+                                    <input type="text" class="form-control" placeholder="Tefefon">
+                                </div>
+                                <div class="col-6">
+                                    <input type="email" class="form-control" placeholder="E-mail adresa">
+                                </div>
+                            </div>
+                        </div>
+            </div>
+        </div>
+
+        <div class="sub-div">
+            <button type="submit" class="btn-lg btn-primary sub-btn">Preuzmite PDF</button>
+        </div>
+    </form>
+</div>
+
+<style>
+    .main-container {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        box-shadow: 10px 10px 5px #ccc;
+        max-width: 800px;
+        background: url("../../../../../../Desktop/upisniList/images/yellow_2.png") repeat-y center center fixed;
+        background-size: inherit;
+        border: solid 15px rgb(255, 255, 255);
+    }
+</style>
+</body>
+</html>

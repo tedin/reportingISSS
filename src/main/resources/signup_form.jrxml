@@ -1,0 +1,1664 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2017-06-20T08:51:40 -->
+<jasperReport xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xmlns="http://jasperreports.sourceforge.net/jasperreports"
+              xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
+              name="potvrda_redovan_student" pageWidth="595" pageHeight="842" columnWidth="515" leftMargin="40"
+              rightMargin="40" topMargin="40" bottomMargin="40" uuid="754dcbb3-fcf9-4b93-ba6c-5ec707c2879e">
+    <property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+    <property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+    <property name="com.jaspersoft.studio.unit." value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+    <parameter name="faculty" class="java.lang.String">
+        <defaultValueExpression><![CDATA["Testni fakultet"]]></defaultValueExpression>
+    </parameter>
+    <parameter name="studentFullName" class="java.lang.String">
+        <parameterDescription><![CDATA[]]></parameterDescription>
+        <defaultValueExpression><![CDATA["Student (Otac) Studentić"]]></defaultValueExpression>
+    </parameter>
+    <parameter name="indexNumber" class="java.lang.String">
+        <parameterDescription><![CDATA[]]></parameterDescription>
+        <defaultValueExpression><![CDATA["1234"]]></defaultValueExpression>
+    </parameter>
+    <parameter name="dob" class="java.lang.String">
+        <defaultValueExpression><![CDATA["31.12.1999"]]></defaultValueExpression>
+    </parameter>
+    <parameter name="place" class="java.lang.String">
+        <parameterDescription><![CDATA[]]></parameterDescription>
+        <defaultValueExpression><![CDATA["Test"]]></defaultValueExpression>
+    </parameter>
+    <parameter name="municipality" class="java.lang.String">
+        <parameterDescription><![CDATA[]]></parameterDescription>
+        <defaultValueExpression><![CDATA["Test"]]></defaultValueExpression>
+    </parameter>
+    <parameter name="country" class="java.lang.String">
+        <defaultValueExpression><![CDATA["Test"]]></defaultValueExpression>
+    </parameter>
+    <parameter name="academicYear" class="java.lang.String">
+        <defaultValueExpression><![CDATA["2016 / 2017."]]></defaultValueExpression>
+    </parameter>
+    <parameter name="semester" class="java.lang.String">
+        <defaultValueExpression><![CDATA["I (prvi)"]]></defaultValueExpression>
+    </parameter>
+    <parameter name="studyCycle" class="java.lang.Integer">
+        <defaultValueExpression><![CDATA[2]]></defaultValueExpression>
+    </parameter>
+    <parameter name="studentType" class="java.lang.String">
+        <defaultValueExpression><![CDATA["redovan samofinansirajući"]]></defaultValueExpression>
+    </parameter>
+    <parameter name="department" class="java.lang.String">
+        <defaultValueExpression><![CDATA["Testni odsjek"]]></defaultValueExpression>
+    </parameter>
+    <parameter name="studyProgram" class="java.lang.String">
+        <defaultValueExpression><![CDATA["Testni studijski program"]]></defaultValueExpression>
+    </parameter>
+    <parameter name="date" class="java.lang.String">
+        <defaultValueExpression><![CDATA["10.5.2017.god."]]></defaultValueExpression>
+    </parameter>
+    <parameter name="jmbg" class="java.lang.String">
+        <defaultValueExpression><![CDATA["12345567890123"]]></defaultValueExpression>
+    </parameter>
+    <parameter name="citizenship" class="java.lang.String">
+        <defaultValueExpression><![CDATA["BIH"]]></defaultValueExpression>
+    </parameter>
+    <parameter name="nationality" class="java.lang.String">
+        <defaultValueExpression><![CDATA["Ostali"]]></defaultValueExpression>
+    </parameter>
+    <parameter name="highSchool" class="java.lang.String">
+        <defaultValueExpression><![CDATA["Sarajevo, 2015"]]></defaultValueExpression>
+    </parameter>
+    <parameter name="father" class="java.lang.String">
+        <defaultValueExpression><![CDATA["Otac Studentić"]]></defaultValueExpression>
+    </parameter>
+    <parameter name="mother" class="java.lang.String">
+        <defaultValueExpression><![CDATA["Majka Studentić"]]></defaultValueExpression>
+    </parameter>
+    <parameter name="fatherOccupation" class="java.lang.String">
+        <defaultValueExpression><![CDATA["Zanimanje 1"]]></defaultValueExpression>
+    </parameter>
+    <parameter name="motherOccupation" class="java.lang.String">
+        <parameterDescription><![CDATA[]]></parameterDescription>
+        <defaultValueExpression><![CDATA["Zanimanje 2"]]></defaultValueExpression>
+    </parameter>
+    <parameter name="canton" class="java.lang.String">
+        <defaultValueExpression><![CDATA["Hercegovačko-neretvanski kanton"]]></defaultValueExpression>
+    </parameter>
+    <parameter name="currentAdress" class="java.lang.String">
+        <defaultValueExpression><![CDATA["Test 143"]]></defaultValueExpression>
+    </parameter>
+    <parameter name="telNumber" class="java.lang.String">
+        <defaultValueExpression><![CDATA["033/123-456"]]></defaultValueExpression>
+    </parameter>
+    <parameter name="eMail" class="java.lang.String">
+        <defaultValueExpression><![CDATA["test.test@test.com"]]></defaultValueExpression>
+    </parameter>
+    <parameter name="placeOfBirth" class="java.lang.String">
+        <defaultValueExpression><![CDATA["Mjesto"]]></defaultValueExpression>
+    </parameter>
+    <parameter name="facultyPlace" class="java.lang.String">
+        <defaultValueExpression><![CDATA["Mjesto"]]></defaultValueExpression>
+    </parameter>
+    <queryString language="SQL">
+        <![CDATA[]]>
+    </queryString>
+    <background>
+        <band splitType="Stretch"/>
+    </background>
+    <detail>
+        <band height="762" splitType="Stretch">
+            <staticText>
+                <reportElement x="0" y="370" width="50" height="20" uuid="8c4a58f7-d7ca-4630-93b5-d88d000954ff"/>
+                <textElement textAlignment="Left" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[1. JMBG]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="52" y="370" width="463" height="20" uuid="4680dbfe-1f7e-4b85-9cda-f03fde91c446"/>
+                <box bottomPadding="0">
+                    <pen lineWidth="1.0"/>
+                    <topPen lineWidth="0.0"/>
+                    <leftPen lineWidth="0.0"/>
+                    <bottomPen lineWidth="0.5"/>
+                    <rightPen lineWidth="0.0"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{jmbg}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="0" y="460" width="80" height="20" uuid="75ec647f-8e77-42b0-88ec-ceb5c7ae12af"/>
+                <textElement textAlignment="Left" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[4. Državljanstvo]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="490" width="193" height="20" uuid="dc8bb6db-388d-46da-ab4e-43f7f19610e0"/>
+                <textElement textAlignment="Left" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[5. Gdje i kada je završio srednju školu]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="520" width="129" height="20" uuid="0311c49d-72fe-48f1-87ac-5d3d79e157cd"/>
+                <textElement textAlignment="Left" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[6. Ime i prezime roditelja]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="358" y="730" width="154" height="16" uuid="d6167719-a9d3-49d4-8e81-b5138daaa742"/>
+                <textElement textAlignment="Center">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[Potpis Studenta]]></text>
+            </staticText>
+            <textField isBlankWhenNull="true">
+                <reportElement x="358" y="710" width="154" height="20" uuid="5b40ce3b-773e-40bb-b16e-143a6b315e6c"/>
+                <box>
+                    <bottomPen lineWidth="0.5" lineStyle="Dashed"/>
+                </box>
+                <textElement>
+                    <font fontName="SansSerif" pdfEncoding="Cp1250"/>
+                </textElement>
+            </textField>
+            <staticText>
+                <reportElement x="143" y="320" width="228" height="30" uuid="264dbf24-1f93-4041-ad37-6f08bba79d4d"/>
+                <textElement textAlignment="Center">
+                    <font fontName="SansSerif" size="16" isBold="true" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[PODACI O STUDENTU]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="550" width="117" height="20" uuid="19dd3317-01dd-4fcb-ae18-532f8f53e925"/>
+                <textElement textAlignment="Left" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[Zanimanje roditelja]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="580" width="70" height="20" uuid="9dd6a2f8-32f0-4c34-b355-f4b236a704d8"/>
+                <textElement textAlignment="Left" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[7. Prebivalište]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="80" y="460" width="170" height="20" uuid="def950dc-3a89-4614-9ad4-a04cd28eb419"/>
+                <box bottomPadding="0">
+                    <pen lineWidth="1.0"/>
+                    <topPen lineWidth="0.0"/>
+                    <leftPen lineWidth="0.0"/>
+                    <bottomPen lineWidth="0.5"/>
+                    <rightPen lineWidth="0.0"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{citizenship}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="260" y="460" width="65" height="20" uuid="99b8d1da-83de-4e4c-8cfe-05829b24a07d"/>
+                <textElement textAlignment="Left" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[Nacionalnost]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="325" y="460" width="190" height="20" uuid="ec4cb959-671d-4d16-9296-c29533217493"/>
+                <box bottomPadding="0">
+                    <pen lineWidth="1.0"/>
+                    <topPen lineWidth="0.0"/>
+                    <leftPen lineWidth="0.0"/>
+                    <bottomPen lineWidth="0.5"/>
+                    <rightPen lineWidth="0.0"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{nationality}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="325" y="480" width="190" height="12" uuid="524b9cc0-30ad-4d9b-bec9-af614d007ca4">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <textElement textAlignment="Center" verticalAlignment="Top">
+                    <font fontName="SansSerif" size="8" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[(samo za državljane BIH)]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="193" y="490" width="322" height="20" uuid="f0d6bd32-2e5a-47bb-b6f0-5f298b2ea683"/>
+                <box bottomPadding="0">
+                    <pen lineWidth="1.0"/>
+                    <topPen lineWidth="0.0"/>
+                    <leftPen lineWidth="0.0"/>
+                    <bottomPen lineWidth="0.5"/>
+                    <rightPen lineWidth="0.0"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{highSchool}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="129" y="520" width="181" height="20" uuid="0df94789-e748-4831-948b-7c1fe3c4c434"/>
+                <box bottomPadding="0">
+                    <pen lineWidth="1.0"/>
+                    <topPen lineWidth="0.0"/>
+                    <leftPen lineWidth="0.0"/>
+                    <bottomPen lineWidth="0.5"/>
+                    <rightPen lineWidth="0.0"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{father}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="320" y="520" width="195" height="20" uuid="5af3662c-9084-4972-82f6-aab8c4f79161"/>
+                <box bottomPadding="0">
+                    <pen lineWidth="1.0"/>
+                    <topPen lineWidth="0.0"/>
+                    <leftPen lineWidth="0.0"/>
+                    <bottomPen lineWidth="0.5"/>
+                    <rightPen lineWidth="0.0"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{mother}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="129" y="550" width="181" height="20" uuid="969cbd67-a3a5-4aaf-aef8-897807008244"/>
+                <box bottomPadding="0">
+                    <pen lineWidth="1.0"/>
+                    <topPen lineWidth="0.0"/>
+                    <leftPen lineWidth="0.0"/>
+                    <bottomPen lineWidth="0.5"/>
+                    <rightPen lineWidth="0.0"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{fatherOccupation}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="320" y="550" width="195" height="20" uuid="8ea20def-7084-40d4-bc13-43c9bfca90e8"/>
+                <box bottomPadding="0">
+                    <pen lineWidth="1.0"/>
+                    <topPen lineWidth="0.0"/>
+                    <leftPen lineWidth="0.0"/>
+                    <bottomPen lineWidth="0.5"/>
+                    <rightPen lineWidth="0.0"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{motherOccupation}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="320" y="540" width="195" height="12" uuid="1d2a3607-ed0c-42e6-94e9-12e95c6a885e">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <textElement textAlignment="Center" verticalAlignment="Top">
+                    <font fontName="SansSerif" size="8" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[(majka)]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="320" y="570" width="195" height="12" uuid="b2cc90a2-405d-46fe-a3e7-e6967391bf73">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <textElement textAlignment="Center" verticalAlignment="Top">
+                    <font fontName="SansSerif" size="8" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[(majka)]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="129" y="570" width="181" height="12" uuid="1a125d1c-0740-4594-8eb3-7d91ecbbe8de">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <textElement textAlignment="Center" verticalAlignment="Top">
+                    <font fontName="SansSerif" size="8" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[(otac)]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="129" y="540" width="181" height="12" uuid="863ee887-58aa-4867-8694-8a7a5b565454">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <textElement textAlignment="Center" verticalAlignment="Top">
+                    <font fontName="SansSerif" size="8" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[(otac)]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="70" y="580" width="445" height="20" uuid="4c970963-f9b2-42f0-8ee0-0b65be436c89"/>
+                <box bottomPadding="0">
+                    <pen lineWidth="1.0"/>
+                    <topPen lineWidth="0.0"/>
+                    <leftPen lineWidth="0.0"/>
+                    <bottomPen lineWidth="0.5"/>
+                    <rightPen lineWidth="0.0"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression>
+                    <![CDATA[$P{place} + ", općina " + $P{municipality} + ", " + $P{canton} + ", " + $P{country}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="0" y="610" width="220" height="20" uuid="6d273133-4ef5-4165-a348-c68248bccbf3"/>
+                <textElement textAlignment="Left" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[8. Adresa stanovanja za vrijeme školovanja]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="70" y="600" width="445" height="12" uuid="4cb40838-53c2-42cf-ab5a-6b4157388557">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <textElement textAlignment="Center" verticalAlignment="Top">
+                    <font fontName="SansSerif" size="8" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[(mjesto, općina, kanton, država)]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="220" y="610" width="294" height="20" uuid="c89c1aa6-8157-4253-ad1b-eeebb6883b2f"/>
+                <box bottomPadding="0">
+                    <pen lineWidth="1.0"/>
+                    <topPen lineWidth="0.0"/>
+                    <leftPen lineWidth="0.0"/>
+                    <bottomPen lineWidth="0.5"/>
+                    <rightPen lineWidth="0.0"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{currentAdress}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="0" y="640" width="50" height="20" uuid="02dae8ff-d58d-40d9-905c-e630aa135cbc"/>
+                <textElement textAlignment="Left" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[9. Telefon]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="50" y="640" width="130" height="20" uuid="b299fae7-2c88-425e-8674-c1a51897dc12"/>
+                <box bottomPadding="0">
+                    <pen lineWidth="1.0"/>
+                    <topPen lineWidth="0.0"/>
+                    <leftPen lineWidth="0.0"/>
+                    <bottomPen lineWidth="0.5"/>
+                    <rightPen lineWidth="0.0"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{telNumber}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="193" y="640" width="40" height="20" uuid="9529d2cc-2955-4989-82e0-6144d0ab45dd"/>
+                <textElement textAlignment="Left" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[e-mail]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="232" y="640" width="282" height="20" uuid="8d02550a-a7fb-4a2f-9bea-6826d25ff82b"/>
+                <box bottomPadding="0">
+                    <pen lineWidth="1.0"/>
+                    <topPen lineWidth="0.0"/>
+                    <leftPen lineWidth="0.0"/>
+                    <bottomPen lineWidth="0.5"/>
+                    <rightPen lineWidth="0.0"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{eMail}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="0" y="710" width="8" height="20" uuid="a269785c-5d7b-4490-b5ee-4c2aa083c93e"/>
+                <textElement textAlignment="Left" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[U]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="8" y="710" width="110" height="20" uuid="fd7e31d6-37a2-4c93-982a-a9463548b8df"/>
+                <box bottomPadding="0">
+                    <pen lineWidth="1.0"/>
+                    <topPen lineWidth="0.0"/>
+                    <leftPen lineWidth="0.0"/>
+                    <bottomPen lineWidth="0.5"/>
+                    <rightPen lineWidth="0.0"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{facultyPlace}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="117" y="710" width="40" height="20" uuid="5d00c1ed-c70b-4b11-b083-0f780b98f503"/>
+                <textElement textAlignment="Left" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[, dana]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="157" y="710" width="80" height="20" uuid="5eba6b9d-4c24-43ab-ad27-6b3392136bad"/>
+                <box bottomPadding="0">
+                    <pen lineWidth="1.0"/>
+                    <topPen lineWidth="0.0"/>
+                    <leftPen lineWidth="0.0"/>
+                    <bottomPen lineWidth="0.5"/>
+                    <rightPen lineWidth="0.0"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{date}]]></textFieldExpression>
+            </textField>
+            <textField isStretchWithOverflow="true" pattern="">
+                <reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="29" width="259"
+                               height="20" uuid="d90d17f5-7962-40fd-ab11-4aa00a817e78"/>
+                <box>
+                    <bottomPen lineWidth="0.5"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Middle" rotation="None">
+                    <font fontName="SansSerif" size="11" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{faculty}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="0" y="10" width="259" height="19" uuid="3528e530-3f09-41e0-a176-553ec4c9d7ab"/>
+                <textElement textAlignment="Center" verticalAlignment="Top" markup="none">
+                    <font fontName="SansSerif" size="11" isBold="true" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[U N I V E R Z I T E T  U  S A R A J E V U]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="400" y="30" width="115" height="20" uuid="829a57d9-0e08-412a-8e91-49c80e60a104">
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <box bottomPadding="0">
+                    <bottomPen lineWidth="0.5"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="12" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{indexNumber}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="330" y="30" width="70" height="20" uuid="a3426b80-92f6-4a92-a1b8-31db92cb1fea">
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[Broj indexa]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="143" y="110" width="228" height="40" uuid="a6bc9fbe-af5b-450e-acd5-7e200ed5031c"/>
+                <textElement textAlignment="Center">
+                    <font fontName="SansSerif" size="30" isBold="true" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[UPISNI LIST]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="0" y="200" width="310" height="20" uuid="2c1b173e-6857-47f8-8787-a1d77dc01961">
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <box bottomPadding="0">
+                    <pen lineWidth="0.5"/>
+                    <topPen lineWidth="0.0"/>
+                    <leftPen lineWidth="0.0"/>
+                    <bottomPen lineWidth="0.5"/>
+                    <rightPen lineWidth="0.0"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="13" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{studentFullName}.toUpperCase()]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="381" y="200" width="133" height="20" uuid="c165a1c8-471c-498b-a914-b3ab7bb4e55b">
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <box bottomPadding="0">
+                    <bottomPen lineWidth="0.5"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{studentType}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="310" y="200" width="71" height="20" uuid="cb5dd09b-6153-48db-9faf-de374dd9d338">
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[upisuje se kao]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="232" width="47" height="15" uuid="15b24608-29a9-4fce-a1a1-3bb0d9873e73">
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <textElement textAlignment="Left" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[student u]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="151" y="232" width="42" height="15" uuid="152bf4ab-7c85-4a4d-8996-7fa00b8fcfb6"/>
+                <box bottomPadding="0">
+                    <pen lineWidth="1.0"/>
+                    <topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                    <leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                    <bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+                    <rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression>
+                    <![CDATA[(($P{studyCycle} == 1) ? "prvog" : (($P{studyCycle} == 2) ? "drugog" : "trećeg"))]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="270" y="232" width="245" height="15" uuid="bf60f509-e3d0-4eb0-b6fe-dbfabc2992e1">
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <box bottomPadding="0">
+                    <pen lineWidth="0.5"/>
+                    <topPen lineWidth="0.0"/>
+                    <leftPen lineWidth="0.0"/>
+                    <bottomPen lineWidth="0.5"/>
+                    <rightPen lineWidth="0.0"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{department}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="0" y="220" width="310" height="12" uuid="f130c42e-a282-4ad6-8fd2-9337456eca4a">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <textElement textAlignment="Center" verticalAlignment="Top">
+                    <font fontName="SansSerif" size="8" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[(ime, ime jednog roditelja, prezime)]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="103" y="232" width="48" height="15" uuid="66bf1dbd-f889-4bdd-820e-5fa0687f90c9">
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[semestar]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="47" y="232" width="56" height="15" uuid="80ed9b41-6284-461c-b96d-f1eb1d07bb84"/>
+                <box bottomPadding="0">
+                    <pen lineWidth="1.0"/>
+                    <topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                    <leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                    <bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+                    <rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{semester}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="193" y="232" width="77" height="15" uuid="4234f755-4961-444a-8cdf-448fccfd83d5">
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[ciklusa studija, ]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="30" y="255" width="230" height="15" uuid="7e58d480-c7d4-4c93-b472-3e24f83f1a85">
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <box bottomPadding="0">
+                    <pen lineWidth="0.5"/>
+                    <topPen lineWidth="0.0"/>
+                    <leftPen lineWidth="0.0"/>
+                    <bottomPen lineWidth="0.5"/>
+                    <rightPen lineWidth="0.0"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{studyProgram}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="0" y="255" width="30" height="15" uuid="7ba7d157-4354-4e0f-b08a-1750c57fb1ba">
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <textElement textAlignment="Left" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[smjer]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="270" y="247" width="245" height="12" uuid="b55b6498-97ee-4029-98b4-cbc922121db7">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <textElement textAlignment="Center" verticalAlignment="Top">
+                    <font fontName="SansSerif" size="8" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[(odsjek)]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="157" y="400" width="358" height="20" uuid="a2782090-39c7-48b6-b18c-7a171629b494"/>
+                <box bottomPadding="0">
+                    <pen lineWidth="1.0"/>
+                    <topPen lineWidth="0.0"/>
+                    <leftPen lineWidth="0.0"/>
+                    <bottomPen lineWidth="0.5"/>
+                    <rightPen lineWidth="0.0"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{dob}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="0" y="400" width="156" height="20" uuid="543afca7-e2e2-4ec7-ab31-51a28457f0bf"/>
+                <textElement textAlignment="Left" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[2. Dan, mjesec i godina rođenja]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="211" y="420" width="304" height="30" uuid="f17f2719-f68e-422e-9cbd-ccb082e55b79"/>
+                <box bottomPadding="0">
+                    <pen lineWidth="1.0"/>
+                    <topPen lineWidth="0.0"/>
+                    <leftPen lineWidth="0.0"/>
+                    <bottomPen lineWidth="0.5"/>
+                    <rightPen lineWidth="0.0"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression>
+                    <![CDATA[$P{placeOfBirth} + ", " +$P{municipality} + ", "  + $P{canton} + ", " + $P{country}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="0" y="430" width="210" height="20" uuid="5e9a8d3a-f3fa-49a4-aa90-d022a21a4c97"/>
+                <textElement textAlignment="Left" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[3. Mjesto rođenja, općina, kanton, država]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="50" width="8" height="20" uuid="c306d3f6-1309-423f-8aaa-664f71d44d83"/>
+                <textElement textAlignment="Left" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[U]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="8" y="50" width="251" height="20" uuid="9e8d06bf-0821-4d27-97b7-a06369950966"/>
+                <box bottomPadding="0">
+                    <pen lineWidth="1.0"/>
+                    <topPen lineWidth="0.0"/>
+                    <leftPen lineWidth="0.0"/>
+                    <bottomPen lineWidth="0.5"/>
+                    <rightPen lineWidth="0.0"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" isBold="false" pdfEncoding="Cp1250"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{facultyPlace}]]></textFieldExpression>
+            </textField>
+        </band>
+        <band height="748">
+            <rectangle>
+                <reportElement x="1" y="40" width="180" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="b7048f11-e077-48e2-aa3c-2b73056ca541">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                    <property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="1" y="58" width="180" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="ec6d146f-2a4b-497c-a9fb-75c03a588c97">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                    <property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="1" y="76" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="5e201859-869d-4e57-9e9a-6e7b6ca5fc11">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="1" y="94" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="3951b690-b956-47ff-b1fa-0a0e301917ea">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="1" y="112" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="eec5fbd3-1c67-46ab-82a1-12afc4fe0c7e">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="1" y="148" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="b1c8f645-815d-40d6-add8-2644b59188fb">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="1" y="166" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="5b6eed19-ea76-4ae3-b147-f1b2b476c8a1">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="1" y="130" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="2b3184e9-e70e-4a01-aa71-ae18ead37bd4">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="1" y="256" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="3b0464b1-06cd-45d1-8748-93c969638d06">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="1" y="292" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="eecc5a1b-c548-42c9-8ab3-608e113b3523">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="1" y="274" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="a9f75366-c1ba-42d4-b7ac-3a2264110655">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="1" y="202" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="644055de-f411-4e90-8037-33b4380fa8dc">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="1" y="220" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="0fc80576-0b02-4727-976e-bb0452534b35">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="1" y="184" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="9e24b900-9727-4127-88a0-28b488df81a0">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="1" y="238" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="89937b59-0ba9-4444-8afd-360f0356da64">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="444" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="e735dc32-30af-490d-88f8-407bfc5ca6cf">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="462" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="0fb8c3e1-a12e-4af7-91cf-72669acd3ab0">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="480" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="a41b8f02-43fb-4d16-a856-cb09cc9762e7">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="498" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="42987822-1e3f-47f7-9ce8-e4e5eabc9af7">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="516" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="b15f531d-22dd-47f6-ab3b-6055bbc7e914">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="552" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="516be43c-a462-4321-ba6f-8b746262f10a">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="570" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="76d1b13d-bcc3-40ae-9a52-fe96d72840eb">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="534" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="0e439e3d-d3dd-45b1-aabf-f4276218644c">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="660" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="f33b16e8-7ec9-4f99-9dc2-50788b33f90a">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="696" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="25e1a89a-2c9f-4792-b1ca-a5c381123281">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="678" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="c59b61b5-a0fc-4967-a5e3-2d3b3e5d54fa">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="606" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="994c58ab-9b9b-4f02-987d-85fd303bfb34">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="624" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="97627d56-8018-46b8-b296-75aa62c2c132">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="588" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="94da81e8-4ffa-45fa-acba-1b1ce2be4000">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="642" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="ececa6d2-8938-4223-b23b-0d8f900dafcb">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="1" y="328" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="1399f39c-13ff-483f-a06d-d3c15ead06c3">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="1" y="364" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="5771fc7e-3cd2-4595-b9be-750143f4d191">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="1" y="346" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="c1d8e1e9-510e-4f3a-8a8b-db2f7f3775f0">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="1" y="310" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="319f0ef2-048d-4520-bdfc-77081d479e0b">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="444" width="129" height="270" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="acfec629-758f-418f-a834-f1a9ae27ae02">
+                    <property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="129" y="444" width="129" height="270" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="9f821d16-63e2-4fb2-947b-5f0ec7eac596">
+                    <property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+                    <property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="258" y="444" width="129" height="270" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="ddff6c14-8baf-4891-b70e-79be472a44be">
+                    <property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="181" y="40" width="335" height="36" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="44d03e16-d0b9-4253-8a0c-496ced361ddb">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                    <property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="349" y="40" width="167" height="342" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="518acd84-a216-4508-bb4a-5a38d030ec5a">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="181" y="40" width="168" height="342" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="6a6000e8-83a0-49f2-b6a5-b3e9c20c8d81">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="1" y="58" width="90" height="324" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="a6e6176b-c870-4c24-9c8f-ef2ac42cc738">
+                    <property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <staticText>
+                <reportElement x="52" y="10" width="410" height="30" uuid="fbe002a0-c7b5-45dd-ac23-95f148864ddb">
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="13" isBold="true" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[TOK STUDIJA: UPISANI I OVJERENI SEMESTAR]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="1" y="400" width="513" height="30" uuid="b864975c-4b90-4885-90e2-724a8874aed8">
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <textElement textAlignment="Center">
+                    <font fontName="SansSerif" size="13" isBold="true" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[TOK STUDIJA: VJEŽBE - KOLOKVIJI - PRAKTIČNI RADOVI - FERIJALNA PRAKSA]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="725" width="490" height="15" uuid="cca8a0c3-f599-42f6-88b2-bdb06df52347"/>
+                <textElement textAlignment="Left" verticalAlignment="Bottom">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text>
+                    <![CDATA[  * Podatak na strani 2, 3 i 4 popunjava ovlašteno lice uposleno u Studentskoj službi fakulteta.]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="1" y="40" width="179" height="18" uuid="a0a80683-8495-450f-8d3e-8abcb46a5f2d">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[Semestar]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="181" y="40" width="168" height="35" uuid="2feecad0-fe49-4287-89c9-82ef92cc26bc">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[Datum podnošenja lista o semestru]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="348" y="41" width="168" height="35" uuid="81d3fa94-782f-47f1-8ffc-ac394f03c788">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[Datum ovjere semestra]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="92" y="58" width="88" height="18" uuid="b0659e48-35e9-4b85-8e76-4ae8cfedbfba">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[Školska godina]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="1" y="58" width="90" height="18" uuid="de4b8560-fd4a-4711-910f-2d3b3777bbd8">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[Po redu]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="1" y="444" width="128" height="18" uuid="b1ea75d5-596b-438d-8147-7b8756eb43cd">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[Nastavni predmeti]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="129" y="444" width="128" height="18" uuid="7c7b27b5-bb53-41f0-a76a-00fa15a8ef35">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[Opis rada]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="258" y="444" width="128" height="18" uuid="0500782f-3bb9-4a90-803e-2a588fe33b87">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[Rad objavljen - datum]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="387" y="444" width="128" height="18" uuid="129bb29a-b4f0-43fa-be0d-8a0b6c7c2c53">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[Ocjena]]></text>
+            </staticText>
+        </band>
+        <band height="762">
+            <rectangle>
+                <reportElement x="0" y="50" width="515" height="36" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="9371e1b4-277b-44c5-804d-f64a3b6880a5">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="86" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="909b8a91-8113-4734-b776-0df24deb09ba">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="122" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="683e517e-972b-46c1-bddd-4efe602fe8ab">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="140" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="0f452fd2-42ce-400b-8754-315b3891e668">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="104" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="37b0446a-0a15-48fd-b2b4-42d4ae888f5d">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="230" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="c9071737-4083-4c23-b20d-84c4ef2af4cf">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="266" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="e098279c-908c-4b7f-b230-9389e5568861">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="248" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="dd7b050d-0d50-447c-ae56-b81758eb2e8f">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="176" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="204d7f72-8964-4c59-9be0-1dc68dd1be9a">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="194" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="6a3d45d2-4a49-4474-984d-0a4fd32b0444">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="158" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="3a5f1532-56c9-49aa-97ce-28cac00b0c01">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="212" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="c8c2a7dd-2931-4ab3-96ab-89fd7d16def9">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="302" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="fde824b7-ea1b-4758-bf67-2bf32c3bc9a2">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="338" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="1b78b3d0-dccf-4096-960b-6324bebab568">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="320" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="ddde9254-6a67-4d5c-88e0-157a121c885a">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="284" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="ab31a3a1-8ab0-426f-8150-7544d922cf1d">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <staticText>
+                <reportElement x="52" y="10" width="410" height="20" uuid="a00bbd5b-1777-4a51-91f6-bab4414c984b">
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <textElement textAlignment="Center">
+                    <font fontName="SansSerif" size="13" isBold="true" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[TOK STUDIJA: UPISANI I OVJERENI SEMESTAR]]></text>
+            </staticText>
+            <rectangle>
+                <reportElement x="0" y="356" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="c7323947-f5e0-4cb4-903f-e3923e739d65">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="374" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="0dc68530-510b-4d82-acd2-06c1111de7d5">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="392" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="72e54cdc-e861-466c-803a-36aa13614400">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="428" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="2336afef-5ac9-4a8f-b956-b5e52fe770d7">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="446" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="2881f7a6-edc2-42e6-8025-998b477ff709">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="410" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="092cb279-c4fe-46cb-9a12-19c7b9265e85">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="536" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="82a7e43d-8394-4f7f-8f4a-7ce0f3b04c49">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="572" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="dec928d4-3c3a-4f14-909e-bfcf763a4a6f">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="554" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="017f1f11-77f5-4a75-8c0e-2bb77229f8f0">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="482" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="2db964fd-27dd-4158-87a7-513122943252">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="500" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="52da5a9f-107a-4745-a943-50b1ba2e89f9">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="464" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="e19748d0-7a6f-4378-82da-191210024f0e">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="518" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="68b203a5-5fd2-444c-bee0-b630372cc920">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="608" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="58bf5cac-c733-4f6f-87e6-1e8dc0dfd29a">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="644" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="2a50054d-309c-4430-94d6-2e003dff2ae6">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="626" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="e439e1c2-66ec-409f-a299-5e458cad935b">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="590" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="63bd21c2-bb71-4ba4-a0f7-a11bc9dbbb52">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="680" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="f2c4d556-abd5-4bfa-9ab6-9627fa488c30">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="662" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="b621f1c7-9965-40d9-ba83-17e75e9fe0f1">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="716" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="532d70dd-0a6e-4584-a1d9-f7947df701e3">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="734" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="e1af2508-43f3-430c-9aa8-c38d43b4fba0">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="698" width="515" height="18" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="d91a168a-2495-4813-8138-9a1fffb2417c">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="0" y="50" width="117" height="702" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="f126966f-b91e-459b-9a83-32011470b29f">
+                    <property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="117" y="50" width="138" height="702" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="c3e4c321-a677-44a1-a877-c2db8cc00e82">
+                    <property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+                    <property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="255" y="50" width="45" height="702" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="47eac8c1-969f-43ab-99d2-d6a0b3f7e0d9">
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <rectangle>
+                <reportElement x="300" y="50" width="86" height="702" backcolor="rgba(255, 255, 255, 0.0)"
+                               uuid="4dba45d3-89f4-48e5-a7b8-7866be89550b">
+                    <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineWidth="0.5"/>
+                </graphicElement>
+            </rectangle>
+            <staticText>
+                <reportElement x="1" y="50" width="114" height="35" uuid="b9d0aa43-f367-496f-a70f-9265e198fc5b">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[Broj i datum prijave za ispit]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="118" y="50" width="136" height="35" uuid="475ba34e-aa62-4a1b-a806-242c51050716">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[Naziv predmeta odnosno grupe predmeta]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="255" y="50" width="45" height="35" uuid="91a9a99a-1172-42dd-a1e6-89deb1b4a849">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[ECTS]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="300" y="51" width="85" height="35" uuid="95745e5d-3cf2-4be4-88ef-a1da71aafccf">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[ Datum polaganja ispita]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="385" y="51" width="130" height="35" uuid="bdded358-9153-458f-a44e-ebc1f1232cf6">
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="11" pdfEncoding="Cp1250"/>
+                </textElement>
+                <text><![CDATA[Rezultat ispita ocjena]]></text>
+            </staticText>
+        </band>
+    </detail>
+</jasperReport>
