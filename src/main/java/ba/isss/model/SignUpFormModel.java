@@ -5,34 +5,34 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class SignUpFormModel {
-    String faculty;
-    String studentFullName;
-    String indexNumber;
-    String dob;
+    String faculty;//TODO fieldovi bez komentara na kraju ne postoje u formi
+    String studentFullName;//
+    String indexNumber;//
+    String dob;//
     String place;
-    String placeOfBirth;
+    String placeOfBirth;//
     String facultyPlace;
     String municipality;
     String country;
-    String semester;
-    String academicYear;
-    Integer studyCycle;
-    String studentType;
-    String department;
+    String semester;//
+    String academicYear;//
+    Integer studyCycle;//
+    String studentType;//
+    String department;//TODO odsjek i smijer treba razdvojiti
     String studyProgram;
     String date;
-    String jmbg;
-    String citizenship;
-    String nationality;
-    String highSchool;
-    String father;
-    String mother;
-    String fatherOccupation;
-    String motherOccupation;
+    String jmbg;//
+    String citizenship;//
+    String nationality;//
+    String highSchool;//
+    String father;//
+    String mother;//
+    String fatherOccupation;//
+    String motherOccupation;//
     String canton;
-    String currentAdress;
-    String telNumber;
-    String eMail;
+    String currentAddress;//
+    String telNumber;//
+    String eMail;//
 
     public String getFaculty() {
         return faculty;
@@ -218,12 +218,12 @@ public class SignUpFormModel {
         this.canton = canton;
     }
 
-    public String getCurrentAdress() {
-        return currentAdress;
+    public String getCurrentAddress() {
+        return currentAddress;
     }
 
-    public void setCurrentAdress(String currentAdress) {
-        this.currentAdress = currentAdress;
+    public void setCurrentAddress(String currentAddress) {
+        this.currentAddress = currentAddress;
     }
 
     public String getTelNumber() {

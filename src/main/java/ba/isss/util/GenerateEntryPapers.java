@@ -137,7 +137,7 @@ public class GenerateEntryPapers {
         parameters.put("fatherOccupation", signUpFormModel.getFatherOccupation());
         parameters.put("motherOccupation", signUpFormModel.getMotherOccupation());
         parameters.put("canton", signUpFormModel.getCanton());
-        parameters.put("currentAdress", signUpFormModel.getCurrentAdress());
+        parameters.put("currentAdress", signUpFormModel.getCurrentAddress());
         parameters.put("telNumber", signUpFormModel.getTelNumber());
         parameters.put("eMail", signUpFormModel.geteMail());
     }

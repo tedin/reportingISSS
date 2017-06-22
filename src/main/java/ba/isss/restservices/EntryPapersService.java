@@ -30,8 +30,9 @@ public class EntryPapersService {
         LOGGER.debug("Received an rest request...");
         return "Hello certificates";
     }
-    @RequestMapping(value = "/signupform", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
-    public  ResponseEntity<byte[]> getSignUpForm(@RequestBody SignUpFormModel signUpFormModel) {
+    //TODO jquery/ajax ne moze skidati binary objekte, pa se mora ici standardnim x-www-formurlencoded zahtjevom
+    @RequestMapping(value = "/signupform", method = RequestMethod.POST, consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE)
+    public  ResponseEntity<byte[]> getSignUpForm(@RequestBody @ModelAttribute SignUpFormModel signUpFormModel) {
         LOGGER.debug("Received an rest request...");
         try {
             byte[] certificate = generateEntryPapers.generateSignUpForm(signUpFormModel);
